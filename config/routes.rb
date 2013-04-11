@@ -1,4 +1,10 @@
 LevelBar::Application.routes.draw do
+  get "pages/mission"
+
+  get "pages/about"
+
+  get "pages/leadership"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
