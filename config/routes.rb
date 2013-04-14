@@ -1,10 +1,15 @@
 LevelBar::Application.routes.draw do
-  get "pages/mission"
-
   get "pages/about"
-
+  get "pages/apply"
+  get "pages/contact"
+  get "pages/donate"
+  get "pages/home"
   get "pages/leadership"
+  get "pages/lsat"
+  get "pages/mission"
+  get "pages/services"
 
+  root to: 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
