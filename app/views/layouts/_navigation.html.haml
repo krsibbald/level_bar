@@ -1,10 +1,10 @@
 = link_to "LevelBar", root_path, :class => 'brand'
 %ul.nav
-  %li= link_to "Mission", pages_mission_path
-  %li= link_to "About", pages_about_path
-  %li= link_to "Leadership", pages_leadership_path
-  %li= link_to "Our Services", pages_services_path
-  %li= link_to "Contact", pages_contact_path
-  %li= link_to "Donate", pages_donate_path
-  %li= link_to "Apply", pages_apply_path
-  %li= link_to "The LSAT", pages_lsat_path
+  %li{:class => "#{(@tab=='mission' ? 'active' : '')}"}= link_to "Mission", pages_mission_path
+  %li{:class => "#{(@tab=='about' ? 'active' : '')}"}= link_to "About", pages_about_path
+  %li{:class => "#{(@tab=='leadership' ? 'active' : '')}"}= link_to "Leadership", pages_leadership_path
+  %li{:class => "#{(@tab=='services' ? 'active' : '')}"}= link_to "Our Services", pages_services_path
+  %li{:class => "#{(@tab=='contact' ? 'active' : '')}"}= link_to "Contact", pages_contact_path
+  %li{:class => "#{(@tab=='donate' ? 'active' : '')}"}= link_to "Donate", pages_donate_path
+  %li{:class => "#{(@tab=='apply' ? 'active' : '')}"}= link_to "Apply", pages_apply_path
+  %li{:class => "#{(@tab=='lsat' ? 'active' : '')}"}= link_to "The LSAT", pages_lsat_path
