@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
-    %title= content_for?(:title) ? yield(:title) : "LevelBar"
+    =render "layouts/title"
     %meta{:content => "Thinking about a career in law?  Wondering where and how to start?  Are you worried about the cost of law school?  How about the cost of applying? Admittance into a competitive law school requires...'", :name => "description"}
     %meta{:content => "", :name => "author"}
     = stylesheet_link_tag "application", :media => "all"
